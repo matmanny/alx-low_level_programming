@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<holberton.h>
 /**
  * times_table -prints the times table from 0 - 9.
  * Return: Nothing.

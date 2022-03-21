@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 /**
  * ptin_rev - print a string 
  * @s:pointer char

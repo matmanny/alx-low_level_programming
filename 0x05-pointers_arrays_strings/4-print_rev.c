@@ -1,7 +1,7 @@
 #include "main.h"
 #include "stdio.h"
 /**
- * print_rev - print a string 
+ * print_rev - print a string
  * @s:pointer char
  * Return void
  */
@@ -14,7 +14,7 @@ for (i = 0; s[i] != '\0'; i++)
 
 	}
 n = i - 1;
-for (i=n; i >= 0; i--)
+for (i = n; i >= 0; i--)
 {
 
 putchar('\n');

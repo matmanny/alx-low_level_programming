@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strlen - length of string
- * @s:char
- * Return:int
+ * _puts - prints a string
+ * @str:pointer char
+ * Return:void
  */
 void _puts(char *str)
 {

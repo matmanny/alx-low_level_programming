@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include "stdio.h"
 /**
  * print_rev - print a string 
  * @s:pointer char

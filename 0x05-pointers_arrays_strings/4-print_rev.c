@@ -1,22 +1,20 @@
 #include "main.h"
 #include "stdio.h"
 /**
- * print_rev - print a string
- * @s:pointer char
- * Return void
+ * print_rev - toma la cadena de la funcion.
+ * @s: value taken from main
+ * Return: (0)
  */
 void print_rev(char *s)
 {
-	int i, n;
-for (i = 0; s[i] != '\0'; i++)
-{
-	continue;
+	int len;
 
+	for (len = 0; s[len] != '\0'; len++)
+	{
 	}
-n = i - 1;
-for (i = n; i >= 0; i--)
-{
-
-putchar('\n');
-}
+	for (len = len - 1; len >= 0; len--)
+	{
+		_putchar(s[len]);
+	}
+	_putchar('\n');
 }

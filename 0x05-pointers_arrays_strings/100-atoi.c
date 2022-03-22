@@ -1,10 +1,21 @@
 #include "main.h"
+#include "stdio.h"
 
+/**
+ * is_numerical - check if it is a digit
+ * @n:number
+ * Return:if it is a number, return 1 else return 0:
+ */
+int is_numerical(unsigned int n)
+{
+	return (n >= '0' && n <= '9');
+}
 /**
  * _atoi - convert a sftring to an integer
  * @s:string
  * Return:return the num
  */
+
 int _atoi(char *s)
 {
 	unsigned int number, i;

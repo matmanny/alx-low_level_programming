@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <time.h>
-#inlude "stdio.h"
+#include "stdio.h"
 /**
  */
 int main(void)

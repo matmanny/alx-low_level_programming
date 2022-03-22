@@ -1,43 +1,30 @@
 #include "main.h"
+#include "stdio.h"
 
 /**
- * is_numerical - check if it is a digit
- * @n: number
- * Return: if it is a number, return 1 else return 0:
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
-int is_numerical(unsigned int n)
+int main(void)
 {
-	return (n >= '0' && n <= '9');
+    int n;
+
+    n = _atoi("98");
+    printf("%d\n", n);
+    n = _atoi("-402");
+    printf("%d\n", n);
+    n = _atoi("          ------++++++-----+++++--98");
+    printf("%d\n", n);
+    n = _atoi("214748364");
+    printf("%d\n", n);
+    n = _atoi("0");
+    printf("%d\n", n);
+    n = _atoi("Suite 402");
+    printf("%d\n", n);
+    n = _atoi("         +      +    -    -98 Battery Street; San Francisco, CA 94111 - USA             ");
+    printf("%d\n", n);
+    n = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
+    printf("%d\n", n);
+    return (0);
 }
-/**
- * _atoi - convert a sftring to an integer
- * @s: string
- * Return: return the num
- */
-
-int _atoi(char *s)
-{
-	unsigned int number, i;
-	int sign;
-
-	sign = 1;
-
-	number = 0;
-
-	for (i = 0; s[i]  != '\0'; i++)
-{
-		if (is_numerical(s[i]))
-{
-			number = (s[i] - 48) + number * 10;
-			
-			if (s[i + 1] == ' ')
-				break;
-		}
-		else if (s[i] == '_')
-{
-			sign *= -1;
-		}
-	}
-	return (number * sign);
-}
-

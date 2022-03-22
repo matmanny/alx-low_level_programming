@@ -1,10 +1,9 @@
 #include "main.h"
-#include "stdio.h"
 
 /**
  * is_numerical - check if it is a digit
- * @n:number
- * Return:if it is a number, return 1 else return 0:
+ * @n: number
+ * Return: if it is a number, return 1 else return 0:
  */
 int is_numerical(unsigned int n)
 {
@@ -12,8 +11,8 @@ int is_numerical(unsigned int n)
 }
 /**
  * _atoi - convert a sftring to an integer
- * @s:string
- * Return:return the num
+ * @s: string
+ * Return: return the num
  */
 
 int _atoi(char *s)
@@ -22,11 +21,13 @@ int _atoi(char *s)
 	int sign;
 	sign = 1;
 	number = 0;
+
 	for (i = 0; s[i]  != '\0'; i++)
 	{
 		if (is_numerical(s[i]))
 		{
-			number = (s[i] - 48) + number *10;
+			number = (s[i] - 48) + number * 10;
+			
 			if (s[i + 1] == ' ')
 				break;
 		}

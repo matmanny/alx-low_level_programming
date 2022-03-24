@@ -4,20 +4,23 @@
  * @dest: string to append by src
  * @src: string to append to dest
  *
- * Return : address of dest
+ * Retrun: char
  */
 char *_strcat(char *dest, char *src)
 {
-	int i, k;
+	char *s = dest;
 
-	i = k = 0;
-	
-	while(*(dest + i))
-		i++;
-	while ((*(dest + i) = *(src + k)))
+	while (*dest != '\0')
 	{
-		i++;
-		k++;
+		dest++;
 	}
-	return (dest);
+
+	while (*src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+	*dest = '\0';
+	return (s);
 }

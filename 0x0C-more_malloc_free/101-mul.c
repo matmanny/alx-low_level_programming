@@ -12,7 +12,7 @@ void _puts(char *str)
 int i = 0;
 while (str[i])
 {
-	_putchar(str[i]);
+	putchar(str[i]);
 	i++;
 }
 
@@ -63,7 +63,7 @@ for (i = 0; n / divisor > 9; i++, divisor *= 10)
 for (; divisor >= 1; n %= divisor, divisor /= 10)
 {
 	resp = n / divisor;
-	_putchar('0' + resp);
+	putchar('0' + resp);
 }
 
 }
@@ -81,11 +81,11 @@ int main(int argc, char const *argv[])
 
 if (argc != 3)
 {
-	_puts("Error ");
+	puts("Error ");
 	exit(98);
 }
 print_int(_atoi(argv[1]) * _atoi(argv[2]));
-_putchar('\n');
+putchar('\n');
 
 return (0);
 }

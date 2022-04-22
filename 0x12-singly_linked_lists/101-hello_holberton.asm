@@ -1,10 +1,9 @@
-section .data
-	message db "Hello, Holberton",10
-section .text
-global main
+          global    main
+          extern    printf
 main:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, message
-	mov rdx, 17
-	syscall
+	  mov   edi, format
+	  xor   eax, eax
+	  call  printf
+	  mov 	eax, 0
+	  ret
+format: db `Hello, Holberton\n`,0
